@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace COMP123_MidTermExam
+namespace midterm
 {
     /**
      * <summary>
@@ -64,6 +64,7 @@ namespace COMP123_MidTermExam
                         Console.Clear();
                         Console.WriteLine("+ Lotto 6/49 +++++++++++++++++++");
                         lotto649.GenerateLottoNumbers();
+                        
                         Console.WriteLine("++++++++++++++++++++++++++++++++");
                         Console.WriteLine("Please press any key to continue");
                         Console.ReadKey();

@@ -112,36 +112,41 @@ namespace midterm
         {
             // create a string variable named lottoNumberString and intialize it with the empty string
             string lottoNumberString = String.Empty;
-
+            
             // for each lottoNumber in ElementList, loop...
-            foreach (int lottoNumber in ElementList)
-            {
-                // add lottoNumber and appropriate spaces to the lottoNumberString variable
-                lottoNumberString += lottoNumber > 9 ? (lottoNumber + " ") : (lottoNumber + "  ");
-            }
+          
+                foreach (int lottoNumber in ElementList)
+                {
+                    // add lottoNumber and appropriate spaces to the lottoNumberString variable
 
-            return lottoNumberString;
+                    lottoNumberString += lottoNumber > 9 ? (lottoNumber + " ") : (lottoNumber + "  ");
+                
+                }
+                
+            
+
+            return $"Ticket: {lottoNumberString}";
         }
 
         // PUBLIC METHODS +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
         public void PickElements()
         {
-            int count = 0;
+            int count = 1;
             if (ElementList.Count > 0)
             {
                 ElementList.Clear();
                 NumberList.Clear();
                 _build();
             }
-            do
+            while (count <= ElementNumber)
             {
                 int selectnumber = _random.Next(_numberList.Count);
                 _elementList.Add(selectnumber);
-                _numberList.RemoveAt(selectnumber);
+                NumberList.Remove(selectnumber);
                 _elementList.Sort();
                 count++;
             }
-            while (count <= ElementNumber);
+            
 
 
         }

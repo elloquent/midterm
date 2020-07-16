@@ -32,13 +32,17 @@ namespace midterm
         }
 
         // CREATE the public GenerateLottoNumbers method here ----------------
-        public void GenerateLottoNumber()
+        public void GenerateLottoNumbers()
         {
-            for (int p = 0; p <= 6; p++)
+            for (int p = 1; p <= 6; p++)
             {
                 base.PickElements();
-                base.ToString();
+               Console.WriteLine(base.ToString());
             }
+           
+        }
+      
+            
         }
     }
-}
+
