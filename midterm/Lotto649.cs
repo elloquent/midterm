@@ -31,6 +31,10 @@ namespace midterm
 
         }
 
+
+        /// <summary>
+        /// method in the concrete class Lotto649 which id called to display data on the screen
+        /// </summary>
         // CREATE the public GenerateLottoNumbers method here ----------------
         public void GenerateLottoNumbers()
         {

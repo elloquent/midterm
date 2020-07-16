@@ -13,6 +13,12 @@ namespace midterm
      * 
      * @class Program
      */
+     // Author's name Richard Elridge
+     //Student number 301107264
+     //Last modify July 16 2020
+     // This is a simple program that store a list of numbers in a list and using loops the numbers are randomly
+     //assign to an object and display using a switch case for the user to select there choice and the program will display
+     //6 or 7 set of numbers in a row
     public class Program
     {
         // Instantiate lotto649 object

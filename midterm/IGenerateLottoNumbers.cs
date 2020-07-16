@@ -6,6 +6,8 @@ namespace midterm
 {
     interface IGenerateLottoNumbers
     {
+       
+        //overriden method in the interface 
         public void GenerateLottoNumbers()
         { 
         

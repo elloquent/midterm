@@ -77,7 +77,9 @@ namespace midterm
         }
 
         // PRIVATE METHODS ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
+        /// <summary>
+        /// method initializing the instance of the lists
+        /// </summary>
         // CREATE the private _initialize method here -----------------------------
         private void _initialize()
         {
@@ -86,6 +88,9 @@ namespace midterm
             _random = new Random();
         }
 
+        /// <summary>
+        /// method build is used the add numbers from 1 to 49 to the list
+        /// </summary>
         // CREATE the private _build method here -----------------------------------
         private void _build()
         {
@@ -127,7 +132,9 @@ namespace midterm
 
             return $"Ticket: {lottoNumberString}";
         }
-
+        /// <summary>
+        /// this method is used to add random numbers to the list and also used to clear the list base on criteria
+        /// </summary>
         // PUBLIC METHODS +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
         public void PickElements()
         {

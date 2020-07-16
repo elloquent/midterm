@@ -28,6 +28,9 @@ namespace midterm
 
         }
 
+        /// <summary>
+        /// method that is called to display the result on the screen
+        /// </summary>
         // CREATE the public GenerateLottoNumbers method here ----------------
         public void GenerateLottoNumbers()
         {
